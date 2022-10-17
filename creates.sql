@@ -30,7 +30,7 @@ CREATE TABLE produto (
 ###### TABLES DE VENDA ###### 
 
 CREATE TABLE cliente (
-	id_cliente INT PRIMARY KEY,
+	id_cliente INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR (255),
 	email VARCHAR (255) NOT NULL UNIQUE,
 	cidade VARCHAR (50),
@@ -40,7 +40,7 @@ CREATE TABLE cliente (
 CREATE TABLE lojas (
 	id_loja INT PRIMARY KEY AUTO_INCREMENT,
 	nome_loja VARCHAR (255),
-	telefone VARCHAR (11),
+	telefone VARCHAR (15),
 	email VARCHAR (255),
 	cidade VARCHAR (255),
 	uf VARCHAR (2)
@@ -91,3 +91,4 @@ CREATE TABLE estoque (
 	FOREIGN KEY (id_produto) REFERENCES produto(id_produto) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+DROP TABLE categoria, cliente, estoque, funcionario, lojas, marca, pedido, pedido_item, produto;
