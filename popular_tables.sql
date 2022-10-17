@@ -59,7 +59,6 @@ INSERT INTO cliente(nome, email, cidade, uf) VALUES
 	('Genoveva Baldwin','genoveva.baldwin@msn.com', 'Port Washington','NY'),
 	('Lashawn Ortiz','lashawn.ortiz@msn.com','Longview','TX');
 
-select * from cliente;
 
 -- Lojas
 
